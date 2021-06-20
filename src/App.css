@@ -1,38 +1,97 @@
-.App {
+.main-title {
   text-align: center;
+  padding: 1.5rem 0 0 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.intro {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1.25rem 1rem;
+}
+
+.intro .flex-container {
+  margin: 2rem 0 0 0;
+}
+
+.intro .inputs {
+  width: 70%;
+  max-width: 40rem;
+  justify-content: space-between;
+}
+
+.intro input {
+  padding: 0.25rem 0.5rem;
+  flex-basis: 70%;
+  border: 2px solid #071e3d;
+  border-radius: 5px;
+}
+
+.intro input:focus {
+  background: #071e3d;
+  color: #fff;
+}
+
+.intro input::placeholder {
+  opacity: 0.5;
+}
+
+.intro .btn-grad {
+  flex-basis: 25%;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #457fca 0%,
+    #5691c8 51%,
+    #457fca 100%
+  );
+}
+.btn-grad {
+  padding: 0.15rem 0.5rem;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
   color: white;
+  border: none;
+  box-shadow: 0 0 20px -10px #000;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-grad:active {
+  transform: scale(0.9);
+}
+
+.message-div {
+  margin-top: 2rem;
+  height: 60vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group {
+  margin: 3rem;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.input-group .btn-grad {
+  padding: 1rem 2rem;
+}
+
+.input-group .btn-grad + .btn-grad {
+  margin-left: 2rem;
+}
+
+.game-area .msg {
+  font-size: 3rem;
 }

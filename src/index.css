@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Mukta:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+input,
+label,
+button {
+  font: inherit;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.5rem;
+  color: #024076;
+}
+
+body {
+  margin: 0;
+  font-family: "Mukta", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  background: #b2fefa; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0ed2f7,
+    #b2fefa
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0ed2f7,
+    #b2fefa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+
+  height: 100vh;
+  color: #071e3d;
+}
+
+/* .btn {
+  background: none;
+  border: 2px solid #071e3d;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #071e3d;
+} */
+
+.flex-container {
+  display: flex;
 }

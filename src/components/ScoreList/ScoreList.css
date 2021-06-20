@@ -1,0 +1,13 @@
+.score-list {
+  padding: 2rem 0 0 0;
+}
+
+.score-list .flex-container {
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1.75rem;
+}

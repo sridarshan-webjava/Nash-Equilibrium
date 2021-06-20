@@ -1,0 +1,32 @@
+.card {
+  min-width: 10rem;
+  min-height: 13rem;
+  /* background-image: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.225),
+    rgba(255, 255, 255, 0.15)
+  ); */
+  /* background: #83b5ff; */
+  background: #f5f37c;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card + .card {
+  margin-left: 2rem;
+}
+
+.card-name {
+  justify-self: center;
+  align-self: center;
+  font-size: 2.5rem;
+}
+
+.card-score {
+  justify-self: center;
+  align-self: center;
+  font-size: 4.65rem;
+}
