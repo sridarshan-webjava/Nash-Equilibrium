@@ -71,7 +71,7 @@
 }
 
 .message-div {
-  margin-top: 2rem;
+  margin-top: 3rem;
   height: 60vh;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +79,7 @@
 }
 
 .input-group {
-  margin: 3rem;
+  margin: 1.5rem;
   font-size: 2rem;
   justify-content: center;
 }

@@ -7,6 +7,8 @@ import Instruction from "./components/Instruction/Instruction";
 import Input from "./components/Input/Input";
 import Button from "./components/Button/Button";
 import "./App.css";
+
+let socket;
 class App extends Component {
   constructor() {
     super();
@@ -23,7 +25,7 @@ class App extends Component {
   };
 
   onButtonClick1 = () => {
-    const socket = io.connect("http://localhost:5000");
+    socket = io.connect("http://localhost:5000");
     socket.emit("player-details", this.state.playerName);
     socket.on("waiting", msg => {
       this.setState({ message: msg });
@@ -40,12 +42,10 @@ class App extends Component {
   };
 
   sendValueTwo = () => {
-    const socket = io.connect("http://localhost:5000");
     socket.emit("play-round", 2);
   };
 
   sendValueOne = () => {
-    const socket = io.connect("http://localhost:5000");
     socket.emit("play-round", 1);
   };
 
@@ -69,7 +69,8 @@ class App extends Component {
         ) : (
           <div className="game-area">
             <ScoreList playersScore={this.state.playersScore} />
-            <Message message={this.state.round} />
+            <Message message={`Round ${this.state.round}`} />
+            <Message message={`${this.state.playerName}'s response : `} />
             <div className="flex-container input-group">
               <Button text={"Catch 2 Fish"} event={this.sendValueTwo} />
               <Button text={"Catch 1 Fish"} event={this.sendValueOne} />
