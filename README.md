@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# Nash-Equilibrium-Client
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Server file available at https://github.com/sridarshan-webjava/Nash-Equilibrium-server/tree/master
 
-## Available Scripts
+## Navigating through the client side interface
 
-In the project directory, you can run:
+1. The interface opens with the instructions for the game and an input where the player's name/nickname is entered
+![Screenshot 2021-06-20 at 8 20 57 PM](https://user-images.githubusercontent.com/53578801/122678709-8ef4a800-d205-11eb-816e-697c21994709.png)
 
-### `npm start`
+2. Once the player enters the details , a waiting message is displayed to indicate that other players are yet to connect
+ ![Screenshot 2021-06-20 at 8 21 30 PM](https://user-images.githubusercontent.com/53578801/122678772-c6635480-d205-11eb-8af1-7d934235814f.png)
+ 
+3. If all the players are present , then the game screen is displayed with a score card , the round number and inputs for the user to choose from
+![Screenshot 2021-06-20 at 8 21 47 PM](https://user-images.githubusercontent.com/53578801/122678817-f1e63f00-d205-11eb-95ed-b04267826814.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. When all the players enter their respective choices , the score card updates automatically and the next round is indicated through the change in round number
+![Screenshot 2021-06-20 at 8 22 27 PM](https://user-images.githubusercontent.com/53578801/122678852-1e01c000-d206-11eb-98db-b94f44e1ce40.png)
