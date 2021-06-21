@@ -92,6 +92,19 @@
   margin-left: 2rem;
 }
 
-.game-area .msg {
+.game-area .msg,
+.display-win {
   font-size: 3rem;
+}
+
+.display-win {
+  font-size: 2rem;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.display-win .btn-grad {
+  margin: 0 auto;
 }

@@ -33,6 +33,9 @@ class App extends Component {
     socket.on("start", msg => {
       this.setState({ message: msg });
     });
+    socket.on("end-game", winner => {
+      this.setState({ message: winner });
+    });
     socket.on("update-scores", data => {
       this.setState({ playersScore: data });
     });
@@ -47,6 +50,10 @@ class App extends Component {
 
   sendValueOne = () => {
     socket.emit("play-round", 1);
+  };
+
+  restartGame = () => {
+    this.setState({ message: "Intro" });
   };
 
   render() {
@@ -66,7 +73,7 @@ class App extends Component {
             <Message message={this.state.message} />
             <Loader />
           </div>
-        ) : (
+        ) : this.state.message.includes("Starting") ? (
           <div className="game-area">
             <ScoreList playersScore={this.state.playersScore} />
             <Message message={`Round ${this.state.round}`} />
@@ -75,6 +82,11 @@ class App extends Component {
               <Button text={"Catch 2 Fish"} event={this.sendValueTwo} />
               <Button text={"Catch 1 Fish"} event={this.sendValueOne} />
             </div>
+          </div>
+        ) : (
+          <div className="display-win flex-container">
+            <Message message={this.state.message} />
+            <Button text={"Play Again"} event={this.restartGame} />
           </div>
         )}
       </div>
